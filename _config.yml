@@ -5,7 +5,7 @@ baseurl: "/space-jekyll-template" # for test: remove string '/space-jekyll-templ
 url: "http://victorvoid.github.io/space-jekyll-template/" # for test: remove string 'http://victorvoid.github.io' to '' but in production: 'https://yourusername.github.io'
 
 # User settings
-username: 当我成为背影时
+username: lorem ipsum
 user_title: Lorem Ipsum - FrontEnd
 email: lorem.lorem@ipsum.com
 twitter_username: loremipsum
@@ -46,12 +46,8 @@ links:
       url: /about
       key_trigger: 5
   section_2:
-    - title: gitbook
-      url: https://ljq199612.github.io/Volume/_book/index.html
-      new_tab: true
-      key_trigger: b
     - title: github
-      url: http://www.github.com/ljq199612
+      url: http://www.github.com/victorvoid
       new_tab: true
       key_trigger: g
     - title: twitter
