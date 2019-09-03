@@ -1,9 +1,9 @@
 # Site settings
 title: Lorem Ipsum - Web Developer
 description: "A blog about lorem ipsum ..."
-baseurl: "/space" # for test: remove string '/space-jekyll-template' to ''
+baseurl: "" # for test: remove string '/space-jekyll-template' to ''
 url: "http://ljq199612.github.io/space/" # for test: remove string 'http://ljq199612.github.io' to '' 
-but in production: 'https://ljq199612.github.io'
+but in production: 'https://ljq199612.github.io/space/'
 
 # User settings
 username: lorem ipsum
