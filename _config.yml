@@ -46,7 +46,7 @@ links:
       url: /about
       key_trigger: 5
   section_2:
-  - title: gitbook
+    - title: gitbook
       url: https://ljq199612.github.io/Volume/_book/index.html
       new_tab: true
       key_trigger: b
