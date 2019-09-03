@@ -2,7 +2,7 @@
 title: Lorem Ipsum - Web Developer
 description: "A blog about lorem ipsum ..."
 baseurl: "" # for test: remove string '/space-jekyll-template' to ''
-url: "http://ljq199612.github.io/space/" # for test: remove string 'http://victorvoid.github.io' to '' 
+url: "http://ljq199612.github.io/space/" # for test: remove string 'http://ljq199612.github.io' to '' 
 but in production: 'https://ljq199612.github.io'
 
 # User settings
@@ -56,7 +56,7 @@ links:
       new_tab: true
       key_trigger: b
     - title: twitter
-      url: http://www.twitter.com/victorvoid
+      url: http://www.twitter.com/ljq199612
       key_trigger: t
     - title: search
       url: ""
@@ -67,9 +67,9 @@ projects:
   - name: fluany
     url: https://github.com/fluany/fluany
   - name: vim-frontend
-    url: https://github.com/victorvoid/vim-frontend
+    url: https://github.com/ljq199612/vim-frontend
   - name: generator-capybara
-    url: https://github.com/victorvoid/generator-capybara 
+    url: https://github.com/ljq199612/generator-capybara 
 
 # exclude my node related stuff
 exclude: ['package.json', 'src', 'node_modules']
