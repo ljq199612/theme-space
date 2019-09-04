@@ -1,7 +1,7 @@
 # Site settings
-title: 热爱生命
+title: ljq的小屋
 description: "spacemacs 主题界面.."
-#baseurl: "https://ljq199612.github.io/theme-space" 
+baseurl: "/theme-space" 
 #url: "https://ljq199612.github.io"  
 #but in production: 'https://ljq199612.github.io/theme-space'
 
