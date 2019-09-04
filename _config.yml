@@ -1,12 +1,12 @@
 # Site settings
-title: ljq的-小屋
-description: "spacemacs 主题界面.."
+title: 当我成为背影时
+description: "spacemacs 主题界面"
 baseurl: "/theme-space" 
 url: ""  
 #but in production: 'https://ljq199612.github.io/theme-space'
 
 # User settings
-username: I can
+username: 灿烂人生
 user_title: Believe it 
 email: ljq1483858517@163.com
 github_username: ljq199612
