@@ -24,15 +24,38 @@
                          | replace: '.html', '.md' %}
     <ul>
       <li><span>1</span></li>
-      <li><span> {{page.url}}</span></li>
-      <li><span>⌘ blogspace λ </span></li>
+      <li><span>~~灿烂人生~~</span></li>
+      <li><span>～ ～ ～ ～ ～</span></li>
       <li><span>* Menu</span></li>
     </ul>
 
     <ul>
       <li><span>utf-8</span></li>
-      <li><span>web</span></li>
-      <li><span>.html</span></li>
+      <li><span>诚实是智谋的基本条件。</span></li>
+      <!--       <li><span>通往幸福最错误的途径，莫过于名利、享乐和奢华生活</span></li> -->
+      <li>
+        <script language="javascript" type="text/javascript">
+            function show_date_time(){
+                window.setTimeout("show_date_time()", 1000);
+                var now = new Date(); //获取系统日期
+                //获取时间
+                var YY=now.getFullYear();
+                var MM=now.getMonth()+1;
+                var DD=now.getDate();
+                var WW=now.getDay();
+                
+                var hh = now.getHours(); //获取小时
+                var mm = now.getMinutes(); //获取分钟
+                var ss = now.getTime() % 60000; //获取时间，因为系统中时间是以毫秒计算的，
+                //所以秒要通过余60000得到。
+                    ss = (ss - (ss % 1000)) / 1000; //然后，将得到的毫秒数再处理成秒
+                span_dt_dt.innerHTML=YY+"年"+MM+"月"+DD+"日"+"/  "+"星期"+WW+"/ "+hh+"时"+mm+"分"+ss+"秒";//+now
+            }
+            show_date_time();
+        </script> 
+     
+        <span  id="span_dt_dt" ></span>
+      </li>
     </ul>
   </div>
 

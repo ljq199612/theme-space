@@ -277,14 +277,14 @@ h4 {
  animation:pulse 1.3s infinite
 }
 .icon-arrow-thin-right {
- vertical-align:middle;
+ vertical-align:bottom;
  width:18px;
  height:15px;
  fill: green;
 }
 .nalLink {
- vertical-align:middle;
- color: red;
+ vertical-align:baseline;
+ color: mediumaquamarine;
 }
 
 #heart {
