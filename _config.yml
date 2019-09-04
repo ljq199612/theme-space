@@ -1,9 +1,9 @@
 # Site settings
-title: Lorem Ipsum - Web Developer
+title: 热爱生命
 description: "spacemacs 主题界面.."
-baseurl: "/theme-space" 
-url: ""  
-but in production: 'https://ljq199612.github.io/theme-space'
+baseurl: "https://ljq199612.github.io/theme-space" 
+#url: "https://ljq199612.github.io"  
+#but in production: 'https://ljq199612.github.io/theme-space'
 
 # User settings
 username: lorem ipsum
@@ -14,7 +14,7 @@ github_username:  ljq199612
 gplus_username:   ljq
 linkedin_public_url: loremipsum 
 disqus_username: loremipsum
-profile_picture: https://ljq199612.github.io/theme-space/src/img/blog-author.jpg
+profile_picture: https://ljq199612.github.io/theme-space/blog-author.jpg
 
 # Build settings
 markdown: kramdown
