@@ -12,7 +12,7 @@ email: ljq1483858517@163.com
 twitter_username: ljq
 github_username:  ljq199612
 gplus_username:   ljq
-linkedin_public_url: loremipsum # Example: For public profile 'www.linkedin.com/in/john-smith', 'john-smith' is your linkedin_public_url
+linkedin_public_url: loremipsum 
 disqus_username: loremipsum
 profile_picture: /src/img/blog-author.jpg
 
@@ -52,7 +52,7 @@ links:
       new_tab: true
       key_trigger: g
     - title: gitbook
-      url: http://ljq199612.gitee.io/ljq199612.github.io/Volume/_book/index.html
+      url: http://ljq199612.github.io/Volume/_book/index.html
       new_tab: true
       key_trigger: b
     - title: twitter
