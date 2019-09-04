@@ -25,18 +25,17 @@
     <ul>
       <li><span>1</span></li>
       <li><span>~~灿烂人生~~</span></li>
-      <li><span>～ ～ ～ ～ ～</span></li>
+      <li><span>～ I believe ~</span></li>
       <li><span>* Menu</span></li>
     </ul>
 
     <ul>
       <li><span>utf-8</span></li>
-      <li><span>诚实是智谋的基本条件。</span></li>
+      <li><span>～诚实是智谋的基本条件～</span></li>
       <!--       <li><span>通往幸福最错误的途径，莫过于名利、享乐和奢华生活</span></li> -->
       <li>
         <script language="javascript" type="text/javascript">
             function show_date_time(){
-                window.setTimeout("show_date_time()", 1000);
                 var now = new Date(); //获取系统日期
                 //获取时间
                 var YY=now.getFullYear();
@@ -49,9 +48,9 @@
                 var ss = now.getTime() % 60000; //获取时间，因为系统中时间是以毫秒计算的，
                 //所以秒要通过余60000得到。
                     ss = (ss - (ss % 1000)) / 1000; //然后，将得到的毫秒数再处理成秒
-                span_dt_dt.innerHTML=YY+"年"+MM+"月"+DD+"日"+"/  "+"星期"+WW+"/ "+hh+"时"+mm+"分"+ss+"秒";//+now
+                span_dt_dt.innerHTML=YY+"年"+MM+"月"+DD+"日"+"/  "+"星期"+WW+"/ "+hh+"时"+mm+"分";//+now
             }
-            show_date_time();
+            window.setTimeout("show_date_time()", 60000);
         </script> 
      
         <span  id="span_dt_dt" ></span>
