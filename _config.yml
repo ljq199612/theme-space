@@ -54,9 +54,6 @@ links:
       url: http://ljq199612.github.io/Volume/_book/index.html
       new_tab: true
       key_trigger: b
-    - title: twitter
-      url: #
-      key_trigger: t
     - title: search
       url: #
       key_trigger: s #WARNING: search only works with "s"
