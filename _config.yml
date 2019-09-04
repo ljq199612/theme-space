@@ -9,11 +9,10 @@ url: ""
 username: I can
 user_title: Believe it 
 email: ljq1483858517@163.com
-twitter_username: #
-github_username:  ljq199612
-gplus_username:   #
-linkedin_public_url: loremipsum 
-disqus_username: loremipsum
+github_username: ljq199612
+gitbook_url:  http://ljq199612.github.io/Volume/_book/index.html
+linkedin_public_url: #
+disqus_username: #
 profile_picture: https://ljq199612.github.io/theme-space/blog-author.jpg
 
 # Build settings
