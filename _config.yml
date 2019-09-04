@@ -3,7 +3,7 @@ title: Lorem Ipsum - Web Developer
 description: "spacemacs 主题界面.."
 baseurl: "/theme-space" 
 url: ""  
-but in production: 'https://ljq199612.github.io'
+but in production: 'https://ljq199612.github.io/theme'
 
 # User settings
 username: lorem ipsum
@@ -14,7 +14,7 @@ github_username:  ljq199612
 gplus_username:   ljq
 linkedin_public_url: loremipsum # Example: For public profile 'www.linkedin.com/in/john-smith', 'john-smith' is your linkedin_public_url
 disqus_username: loremipsum
-profile_picture: https://68.media.tumblr.com/93f384858e9273d5b980b418e2f2f4d5/tumblr_o5i2aybLJG1uapsfmo2_250.png
+profile_picture: /src/img/blog-author.jpg
 
 # Build settings
 markdown: kramdown
