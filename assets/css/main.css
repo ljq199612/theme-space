@@ -1623,3 +1623,8 @@ footer p {
  text-align:center;
  margin:0
 }
+
+/* 手机横屏 */
+@media only screen and (max-height:500px) {
+  .header-site .recent { display: none; }
+}
