@@ -10,7 +10,7 @@ username: 灿烂人生
 user_title: Believe it 
 email: ljq1483858517@163.com
 github_username: ljq199612
-gitbook_url:  http://ljq199612.github.io/Volume/_book/index.html
+gitbook_url:  http://ljq199612.github.io/Volume/_book/books.html
 linkedin_public_url: #
 disqus_username: #
 profile_picture:  https://ljq199612.github.io/theme-space/blog-author.jpg
@@ -54,7 +54,7 @@ links:
       new_tab: true
       key_trigger: g
     - title: gitbook
-      url: http://ljq199612.github.io/Volume/_book/index.html
+      url: http://ljq199612.github.io/Volume/_book/books.html
       new_tab: true
       key_trigger: b
     - title: search
