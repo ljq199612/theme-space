@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="page.css">
+
+    <script src="https://cdn.staticfile.org/vue/2.2.2/vue.min.js"></script>
+    <title>Title</title>
+</head>
+<body>
+<div class="articleList">
+    <article class="article" v-for="article in articleList">
+        <div class="article_head">
+            <label class="article_name">{{ article.name }}</label>
+            <a class="readOnline" :href="article.url">在线阅读</a>
+        </div>
+        <p class="article_content  hidden_article"  v-html="article.content"></p>
+        <div class="showbtn" v-html="article.showbtn" onclick="isShow(this)"></div>
+    </article>
+</div>
+<script>
+var Child = {
+  template: '<h1>自定义组件</h1>'
+}
+// 创建根实例
+new Vue({
+  el: '.articleList',
+  data: {
+    articleList:[
+      {
+        name: '复活',
+        url: '##',
+        content: ' \
+            I have a dream!I have a dream!I have a dream!I have a dream!I have a dream!I have a dream!             \
+            I have a dream!I have a dream!I have a dream!I have a dream!I have a dream!I have a dream!             \
+            我有一个梦想！我有一个梦想！我有一个梦想！我有一个梦想！我有一个梦想！我有一个梦想！我有一个梦想！                   \
+            我有一个梦想！我有一个梦想！我有一个梦想！我有一个梦想！ 我有一个梦想！我有一个梦想！我有一个梦想！我有一个梦想！      \
+            I have a dream!I have a dream!I have a dream!I have a dream!I have a dream!I have a dream!             \
+            I have a dream!I have a dream!I have a dream!I have a dream!I have a dream!I have a dream!             \
+            I have a dream!I have a dream!I have a dream!I have a dream!I have a dream!I have a dream!             \
+        ',
+        showbtn: '显示全部',
+      },
+      {
+        name: '卡拉',
+        url: '#',
+        content: ' \
+            I have a dream!I have a dream!I have a dream!I have a dream!I have a dream!I have a dream!             \
+            I have a dream!I have a dream!I have a dream!I have a dream!I have a dream!I have a dream!             \
+            我有一个梦想！我有一个梦想！我有一个梦想！我有一个梦想！我有一个梦想！我有一个梦想！我有一个梦想！                   \
+            我有一个梦想！我有一个梦想！我有一个梦想！我有一个梦想！ 我有一个梦想！我有一个梦想！我有一个梦想！我有一个梦想！      \
+            I have a dream!I have a dream!I have a dream!I have a dream!I have a dream!I have a dream!             \
+            I have a dream!I have a dream!I have a dream!I have a dream!I have a dream!I have a dream!             \
+            I have a dream!I have a dream!I have a dream!I have a dream!I have a dream!I have a dream!             \
+        ',
+        showbtn: '显示全部',
+      },
+    ]
+  }
+});
+
+ function isShow(element){
+      if(element.innerHTML=='显示全部'){
+        element.previousElementSibling.className = 'article_content';
+        element.innerHTML='隐藏';
+      }else{
+        element.previousElementSibling.className += ' hidden_article';
+        element.innerHTML='显示全部';
+      }
+    }
+
+function readOnline(){
+    let reads = document.querySelectorAll(".readOnline");
+    let url = "";
+    for(let i=0 ;i < reads.length; i++ ){
+        if( reads[i].attributes["href"].value == '#'){
+           reads[i].style.display='none';
+        }
+    }
+}
+readOnline();
+
+</script>
+
+
+</body>
+</html>
+
+

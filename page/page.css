@@ -1,0 +1,46 @@
+
+body  {
+  font-family : 'Aller Light', Helvetica, Arial, sans-serif; 
+  background-color: white;
+}
+
+.article {
+  width: 90%;
+  margin: 10px auto;
+  color: #4b4949;
+}
+
+.article_head {
+    border-bottom: 1px solid #ddd;
+}
+
+.article_name {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.article a {
+    color: cornflowerblue;
+    float: right;
+    text-decoration: none;
+    margin: 5px;
+}
+
+.article_content {
+    line-height: 24px;
+    margin-bottom: 0;
+}
+.hidden_article {
+    height: 48px;
+    overflow: hidden;
+}
+
+div.showbtn {
+    display: block;
+    margin: 5px auto;
+    width: 80px;
+    font-size: 14px;
+    color: #7a8f9a;
+    line-height: 14px;
+    cursor: pointer;
+}
