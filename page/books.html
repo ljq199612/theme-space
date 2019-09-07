@@ -14,47 +14,60 @@
             <label class="article_name">{{ article.name }}</label>
             <a class="readOnline" :href="article.url">在线阅读</a>
         </div>
-        <p class="article_content  hidden_article"  v-html="article.content"></p>
+        <div class="article_content hidden_article"><p class="article_line" v-html="article.content"></p></div>
         <div class="showbtn" v-html="article.showbtn" onclick="isShow(this)"></div>
     </article>
 </div>
+
 <script>
-var Child = {
-  template: '<h1>自定义组件</h1>'
-}
-// 创建根实例
 new Vue({
   el: '.articleList',
   data: {
     articleList:[
       {
-        name: '复活',
+        name: '简介',
         url: '##',
-        content: ' \
-            I have a dream!I have a dream!I have a dream!I have a dream!I have a dream!I have a dream!             \
-            I have a dream!I have a dream!I have a dream!I have a dream!I have a dream!I have a dream!             \
-            我有一个梦想！我有一个梦想！我有一个梦想！我有一个梦想！我有一个梦想！我有一个梦想！我有一个梦想！                   \
-            我有一个梦想！我有一个梦想！我有一个梦想！我有一个梦想！ 我有一个梦想！我有一个梦想！我有一个梦想！我有一个梦想！      \
-            I have a dream!I have a dream!I have a dream!I have a dream!I have a dream!I have a dream!             \
-            I have a dream!I have a dream!I have a dream!I have a dream!I have a dream!I have a dream!             \
-            I have a dream!I have a dream!I have a dream!I have a dream!I have a dream!I have a dream!             \
+        content: '      \
+           基于vue制作的一根简洁阅读模---------------------------------------版...                                                                   \
+                        \
         ',
         showbtn: '显示全部',
       },
       {
-        name: '卡拉',
-        url: '#',
-        content: ' \
-            I have a dream!I have a dream!I have a dream!I have a dream!I have a dream!I have a dream!             \
-            I have a dream!I have a dream!I have a dream!I have a dream!I have a dream!I have a dream!             \
-            我有一个梦想！我有一个梦想！我有一个梦想！我有一个梦想！我有一个梦想！我有一个梦想！我有一个梦想！                   \
-            我有一个梦想！我有一个梦想！我有一个梦想！我有一个梦想！ 我有一个梦想！我有一个梦想！我有一个梦想！我有一个梦想！      \
-            I have a dream!I have a dream!I have a dream!I have a dream!I have a dream!I have a dream!             \
-            I have a dream!I have a dream!I have a dream!I have a dream!I have a dream!I have a dream!             \
-            I have a dream!I have a dream!I have a dream!I have a dream!I have a dream!I have a dream!             \
+        name: '复活',
+        url: '##',
+        content: '      \
+           <b>《复活》</b>是俄国作家列夫·托尔斯泰创作的长篇小说，首次出版于1899年。                                 <br>        \
+            该书取材于一件真实事件，主要描写男主人公聂赫留朵夫引诱姑妈家女仆玛丝洛娃，使她怀孕并被赶出家门。后来，她沦为妓女，          \
+            因被指控谋财害命而受审判。男主人公以陪审员的身份出庭，见到从前被他引诱的女人，深受良心谴责。他为她奔走伸冤，并请求          \
+            同她结婚，以赎回自己的罪过。上诉失败后，他陪她流放西伯利亚。他的行为感动了她，使她重新爱他。但为了不损害他的名誉和          \
+            地位，她最终没有和他结婚而同一个革命者结为伉俪。                                                                   \
+                        \
         ',
         showbtn: '显示全部',
       },
+      {
+        name: 'Common Lisp',
+        url: '#',
+        content: '                \
+            Welcome to the amazing world of <b>Common Lisp</b>, the programmable programming language.    <br>          \
+            This site is one among many gateways to <b>Common Lisp</b>. Its goal is to provide the <b>Common Lisp</b>   \
+            community with development resources and to work as a starting point for new programmers.        <br>       \
+            <b>Common Lisp</b> is the modern, multi-paradigm, high-performance, compiled, ANSI-standardized, most       \
+            prominent (along with Scheme) descendant of the long-running family of Lisp programming languages.   <br>   \
+            <b>Common Lisp</b> is known for being extremely flexible, having excellent support for object oriented      \
+            programming, and fast prototyping capabilities. It also sports an extremely powerful macro system that      \
+             allows you to tailor the language to your application, and a flexible run-time environment that allows     \
+             modification  and   debugging   of  running applications (excellent for server-side development and        \
+             long-running critical software). It is a multi-paradigm programming language that allows you to choose     \
+             the approach and paradigm according to your application domain.                                            \
+                                    \
+        ',
+        showbtn: '显示全部',
+      },
+
+
+   // 在此行以上编辑 //
     ]
   }
 });
@@ -63,8 +76,9 @@ new Vue({
       if(element.innerHTML=='显示全部'){
         element.previousElementSibling.className = 'article_content';
         element.innerHTML='隐藏';
-      }else{
-        element.previousElementSibling.className += ' hidden_article';
+      }
+      else{
+        element.previousElementSibling.classList.add('hidden_article');
         element.innerHTML='显示全部';
       }
     }
@@ -78,7 +92,28 @@ function readOnline(){
         }
     }
 }
+
+function hasShowBtn(){
+    let contents = document.querySelectorAll(".article_content");
+    let contentHeight = contents[0].offsetHeight;  // 值固定为48
+    let showBtn = "";
+    let linesHeight = "";
+    // 文章折叠后能见区域的高度，默认2行，每行显示的高度是24
+    for(let i=0 ;i < contents.length; i++ ){
+        showBtn = contents[i].nextElementSibling;
+        linesHeight = contents[i].firstChild.offsetHeight;
+        if( linesHeight > contentHeight ){
+           showBtn.style.display ='block';
+        }else{
+           showBtn.style.display ='none';
+        }
+    }
+}
+
 readOnline();
+hasShowBtn();
+window.onresize = function(){ hasShowBtn();}
+
 
 </script>
 
