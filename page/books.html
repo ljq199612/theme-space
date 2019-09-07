@@ -16,7 +16,7 @@
     <article class="article" v-for="article in articleList">
         <div class="article_head">
             <label class="article_name">{{ article.name }}</label>
-            <a class="readOnline" :href="article.url">在线阅读</a>
+            <a class="readOnline" :href="article.url">阅读</a>
         </div>
         <div class="article_content hidden_article"><p class="article_line" v-html="article.content"></p></div>
         <div class="showbtn" v-html="article.showbtn" onclick="isShow(this)"></div>
