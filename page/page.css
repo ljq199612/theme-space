@@ -5,8 +5,8 @@ body  {
 }
 
 .article {
-  width: 90%;
-  margin: 30px auto auto;
+ /* width: 90%; */
+ /* margin: 30px auto auto; */
   color: #4b4949;
 }
 
@@ -37,6 +37,7 @@ body  {
     overflow: hidden;
 }
 
+
 .article_line {
      margin-top: 0;
 }
@@ -54,4 +55,48 @@ div.showbtn {
 .article_date{
     float: right;
     font-size: small
+}
+
+
+@media only screen and (min-width:1100px) {
+    .article{
+        width:80%;
+        margin: 40px auto auto;
+    }
+    .article_content{
+        line-height: 28px;
+        margin-top: 15px;
+        font-size: large;
+    }
+    .article_name{
+        font_size: 28px;
+    }
+    .hidden_article {
+        height: 56px;
+    }
+
+}
+
+@media only screen and (min-width:700px) and (max-width:1100px)  {
+    .article{
+        width:85%;
+        margin: 30px auto auto;
+    }
+    .article_content{
+        /* line-height: 28px; */
+        margin-top: 10px;
+        /* font-size: large; */
+    }
+}
+
+@media only screen and (max-width:700px)  {
+    .article{
+        width:90%;
+        margin: 30px auto auto;
+    }
+    .article_content{
+        line-height: 24px; 
+        margin-top: 10px;
+        /* font-size: large; */
+    }
 }

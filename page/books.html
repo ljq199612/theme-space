@@ -8,7 +8,7 @@
     <title>BooKs | 当我成为背影时</title>
 </head>
 <body>
-    <br><br><br><br>
+    <br><br>
     <div class="articleList">
     <article class="article" v-for="article in articleList">
         <div class="article_head">
@@ -92,7 +92,7 @@ function readOnline(){
 
 function hasShowBtn(){
     let contents = document.querySelectorAll(".article_content");
-    let contentHeight = contents[0].offsetHeight;  // 值固定为48
+    let contentHeight = contents[0].offsetHeight;  // 根据屏幕，值为 48 或 56
     let showBtn = "";
     let linesHeight = "";
     // 文章折叠后能见区域的高度，默认2行，每行显示的高度是24
