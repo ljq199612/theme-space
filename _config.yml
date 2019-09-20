@@ -47,19 +47,19 @@ links:
       key_trigger: 4
     
   section_2:
-    - title: github (G)
+    - title: github
       url: http://www.github.com/ljq199612
       new_tab: true
       key_trigger: g
-    - title: gitbook (B)
+    - title: gitbook
       url: http://ljq199612.github.io/Volume/_book/index.html
       new_tab: true
       key_trigger: b
     - title: search
       url: #
       key_trigger: s #WARNING: search only works with "s"
-    - title: about me (I)
-      url: /theme-space/about
+    - title: about me
+      url: /about_me/
       key_trigger: i
 
 # projects in header index
