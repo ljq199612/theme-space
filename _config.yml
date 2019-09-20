@@ -38,28 +38,29 @@ links:
       key_trigger: 1
     - title: posts
       url: /theme-space/posts
-      key_trigger: 2s
+      key_trigger: 2
     - title: series
       url: /theme-space/series
       key_trigger: 3
     - title: tags
       url: /theme-space/tags
       key_trigger: 4
-    - title: about me
-      url: /theme-space/about
-      key_trigger: 5
+    
   section_2:
-    - title: github
+    - title: github (G)
       url: http://www.github.com/ljq199612
       new_tab: true
       key_trigger: g
-    - title: gitbook
+    - title: gitbook (B)
       url: http://ljq199612.github.io/Volume/_book/index.html
       new_tab: true
       key_trigger: b
     - title: search
       url: #
       key_trigger: s #WARNING: search only works with "s"
+    - title: about me (I)
+      url: /theme-space/about
+      key_trigger: i
 
 # projects in header index
 projects:
