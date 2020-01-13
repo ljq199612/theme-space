@@ -10,30 +10,38 @@
         </h1>
         <br>
         <div class="icons-home">
+        <!--
             <a aria-label="Books" title="books" target="_blank" 
 href="https://ljq199612.github.io/page/readlist/">
                 <svg class="icon icon-books"><use xlink:href="#icon-books"></use></svg>
-            </a> <!--注意:不加target跳转后地址栏不变-->
+            </a>
+            -->
+            <!--注意:不加target跳转后地址栏不变-->
             <a aria-label="Book" title="Book" target="_blank" href="{{site.volume_url}}">
                 <svg class="icon icon-book"><use xlink:href="#icon-book"></use></svg>
             </a>
             <a aria-label="Github" title="my github" target="_blank" href="https://github.com/{{site.github_username}}">
                 <svg class="icon icon-github-alt"><use xlink:href="#icon-github-alt"></use></svg>
             </a>
+            <!--
             <a aria-label="LinkedIn" title="my linkedin" target="_blank" 
                         href="{{site.linkedin_public_url}}">
                 <svg class="icon icon-linkedin"><use xlink:href="#icon-linkedin"></use></svg>
             </a>
+            -->
             <a aria-label="email" title="send to email" target="_blank" 
                         href="mailto:{{site.email}}">
                 <svg class="icon icon-envelope-o"><use xlink:href="#icon-envelope-o"></use></svg>
             </a>
+                
+            <!--
             <a aria-label="RSS" title="Register for my RSS" target="_blank"
                     href="{{ "/feed.xml" | prepend: site.baseurl }}">
                 <svg class="icon icon-feed"><use xlink:href="#icon-feed"></use></svg>
             </a>
+            -->
         </div>
-
+<!--
         <ul class="recent">
             <p>Recent posts:</p>
              {% for post in site.posts limit:3%}
@@ -44,7 +52,7 @@ href="https://ljq199612.github.io/page/readlist/">
                 </li>
               {% endfor %}
         </ul>
-
+-->
         <ul class="recent">
             <p>Recent projects:</p>
                 <li>
